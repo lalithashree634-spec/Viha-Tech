@@ -90,7 +90,7 @@
   .hero-lead {
     font-family: $font-body;
     font-size: clamp(1.1rem, 1.8vw, 1.25rem);
-    color: #d9dbdf;
+    color: inherit;
     line-height: 1.7;
     max-width: 680px;
     margin-bottom: 2.75rem;
