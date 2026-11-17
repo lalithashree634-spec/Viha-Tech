@@ -1,0 +1,29 @@
+@use './variables' as *;
+
+// Ultra-slim, elegant scrollbar
+html {
+  scroll-padding-top: 72px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-gray-subtle;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-gray-medium;
+  border-radius: $radius-pill;
+
+  &:hover {
+    background: $color-teal-accent;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $color-gray-medium $color-gray-subtle;
+}

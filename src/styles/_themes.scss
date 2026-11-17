@@ -1,0 +1,81 @@
+// ==========================================
+// DYNAMIC THEME SYSTEM (Dark Theme + White Theme)
+// ==========================================
+
+:root, [data-theme="dark"] {
+  --theme-bg-body: #07090e;
+  --theme-bg-surface: #0c1017;
+  --theme-bg-card: #101622;
+  --theme-bg-card-hover: #151d2c;
+  --theme-bg-pill: rgba(255, 255, 255, 0.05);
+  --theme-border: rgba(255, 255, 255, 0.08);
+  --theme-border-strong: rgba(255, 255, 255, 0.14);
+  --theme-border-hover: rgba(59, 130, 246, 0.4);
+  --theme-text-primary: #f8fafc;
+  --theme-text-secondary: #cbd5e1;
+  --theme-text-muted: #8492a6;
+  --theme-text-dim: #64748b;
+  --theme-blue-primary: #2563eb;
+  --theme-blue-hover: #3b82f6;
+  --theme-blue-dark: #1d4ed8;
+  --theme-blue-tint: rgba(37, 99, 235, 0.12);
+  --theme-card-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --theme-card-hover-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  --theme-nav-bg: rgba(7, 9, 14, 0.9);
+  --theme-footer-bg: #040609;
+  --theme-input-bg: #090d14;
+  --theme-hero-bg: #07090e;
+  --theme-hero-mask: linear-gradient(
+    to right,
+    rgba(7, 9, 14, 0.96) 0%,
+    rgba(7, 9, 14, 0.88) 45%,
+    rgba(7, 9, 14, 0.52) 75%,
+    rgba(7, 9, 14, 0.22) 100%
+  );
+  --theme-watermark-fade: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.06) 45%,
+    rgba(255, 255, 255, 0.01) 85%,
+    transparent 100%
+  );
+}
+
+[data-theme="light"] {
+  --theme-bg-body: #ffffff;
+  --theme-bg-surface: #f8fafc;
+  --theme-bg-card: #ffffff;
+  --theme-bg-card-hover: #f1f5f9;
+  --theme-bg-pill: #f1f5f9;
+  --theme-border: #e2e8f0;
+  --theme-border-strong: #cbd5e1;
+  --theme-border-hover: rgba(37, 99, 235, 0.6);
+  --theme-text-primary: #09121d;
+  --theme-text-secondary: #334155;
+  --theme-text-muted: #64748b;
+  --theme-text-dim: #94a3b8;
+  --theme-blue-primary: #1e40af;
+  --theme-blue-hover: #2563eb;
+  --theme-blue-dark: #1e3a8a;
+  --theme-blue-tint: rgba(37, 99, 235, 0.08);
+  --theme-card-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --theme-card-hover-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  --theme-nav-bg: rgba(255, 255, 255, 0.92);
+  --theme-footer-bg: #ffffff;
+  --theme-input-bg: #ffffff;
+  --theme-hero-bg: #ffffff;
+  --theme-hero-mask: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.86) 42%,
+    rgba(255, 255, 255, 0.48) 75%,
+    rgba(255, 255, 255, 0.16) 100%
+  );
+  --theme-watermark-fade: linear-gradient(
+    180deg,
+    rgba(9, 18, 29, 0.16) 0%,
+    rgba(9, 18, 29, 0.05) 45%,
+    rgba(9, 18, 29, 0.01) 85%,
+    transparent 100%
+  );
+}

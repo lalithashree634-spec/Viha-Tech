@@ -1,0 +1,49 @@
+// ==========================================
+// COLOR PALETTE (Enterprise Business Blue, Black, White, Grays)
+// ==========================================
+$color-black: #09121d;       // Deep Rich Obsidian Navy-Black
+$color-white: #ffffff;       // Crisp Pure White
+$color-gray-light: #f8fafc;  // Clean Architectural Light Gray
+$color-gray-subtle: #f1f5f9; // Section Tint Gray
+$color-gray-border: #e2e8f0; // Hairline 1px Border Gray
+$color-gray-medium: #64748b; // Refined Medium Slate Gray
+$color-gray-dark: #334155;   // Deep Charcoal Gray
+
+// Professional Enterprise Business Blue Palette (Service-Based IT)
+$color-blue-dark: #1e40af;    // Deep Enterprise Royal Blue (#1E40AF)
+$color-blue-accent: #2563eb;  // Vibrant Tech Cobalt Blue (#2563EB)
+$color-blue-tint: rgba(37, 99, 235, 0.08); // Subtle Ice Blue Tint
+$color-blue-glow: rgba(37, 99, 235, 0.25);
+
+// Aliases mapped to the new business blue
+$color-teal-dark: $color-blue-dark;
+$color-teal-accent: $color-blue-accent;
+$color-teal-tint: $color-blue-tint;
+
+// Modern Card Radii
+$radius-xs: 4px;
+$radius-sm: 6px;
+$radius-md: 10px;
+$radius-lg: 16px;
+$radius-pill: 999px;
+
+// Typography (Outfit for Headings, Poppins for Paragraphs & Body)
+$font-headline: 'Outfit', sans-serif;
+$font-body: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-mono: 'Poppins', sans-serif;
+
+// Easing
+$transition-fast: 0.16s ease-out;
+$transition-smooth: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+
+// Breakpoints
+$bp-sm: 640px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;
+
+// Premium Subtle Tech Shadows
+$shadow-crisp: 0 1px 3px rgba(9, 18, 29, 0.05), 0 1px 2px rgba(9, 18, 29, 0.03);
+$shadow-card: 0 4px 20px rgba(9, 18, 29, 0.04), 0 1px 3px rgba(9, 18, 29, 0.03);
+$shadow-hover: 0 14px 34px rgba(30, 64, 175, 0.12), 0 4px 10px rgba(9, 18, 29, 0.04);

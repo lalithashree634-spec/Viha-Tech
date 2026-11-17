@@ -1,0 +1,41 @@
+@use '../styles/variables' as *;
+
+.service-ribbon-container {
+  width: 100%;
+  overflow: hidden;
+  background: var(--theme-bg-surface, #0c1017);
+  color: var(--theme-text-primary, #ffffff);
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--theme-border, rgba(255, 255, 255, 0.08));
+  user-select: none;
+  white-space: nowrap;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.service-ribbon-track {
+  display: inline-flex;
+  align-items: center;
+  animation: marqueeScroll 45s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.ribbon-item {
+  display: inline-flex;
+  align-items: center;
+  font-family: $font-sans;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: var(--theme-text-muted, #8492a6);
+  padding: 0 1rem;
+  transition: color 0.25s ease;
+
+  .ribbon-divider {
+    color: var(--theme-blue-primary, #2563eb);
+    margin-left: 1rem;
+    font-weight: 400;
+  }
+}

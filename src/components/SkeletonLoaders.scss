@@ -1,0 +1,113 @@
+@use '../styles/variables' as *;
+
+// Core Shimmer Box
+.skeleton-shimmer-box {
+  background: #f1f5f9;
+  background-image: linear-gradient(
+    90deg,
+    #f1f5f9 0%,
+    #e2e8f0 35%,
+    rgba(37, 99, 235, 0.08) 50%,
+    #e2e8f0 65%,
+    #f1f5f9 100%
+  );
+  background-size: 250% 100%;
+  animation: shimmerSweep 1.6s infinite linear;
+  display: inline-block;
+
+  &.mb-2 { margin-bottom: 0.5rem; }
+  &.mb-3 { margin-bottom: 0.75rem; }
+  &.mb-4 { margin-bottom: 1.15rem; }
+  &.mb-5 { margin-bottom: 2rem; }
+}
+
+@keyframes shimmerSweep {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+// Service Card Skeleton Grid
+.services-grid-skeleton {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  @media (max-width: $bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.service-card-skeleton {
+  background: $color-white;
+  border: 1px solid $color-gray-border;
+  border-radius: $radius-md;
+  padding: 1.35rem 1.35rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+
+  .skeleton-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.15rem;
+  }
+
+  .skeleton-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .skeleton-scope-list {
+      margin-top: 1rem;
+      margin-bottom: 1.25rem;
+      padding-top: 0.85rem;
+      border-top: 1px dashed $color-gray-border;
+    }
+  }
+
+  .skeleton-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.85rem;
+    border-top: 1px solid $color-gray-border;
+  }
+}
+
+// Service Detail Skeleton
+.service-detail-skeleton {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+
+  .detail-skeleton-split {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
+  .detail-skeleton-visual-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+

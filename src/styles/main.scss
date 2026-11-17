@@ -1,0 +1,107 @@
+@use './variables' as *;
+@use './themes';
+@use './scrollbar';
+@use './animations';
+@use './subpages';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-body;
+  background-color: var(--theme-bg-body, #07090e);
+  color: var(--theme-text-primary, #f8fafc);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @media (max-width: $bp-sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+// Clean, Slim Headings (Outfit)
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headline;
+  font-weight: 600;
+  color: var(--theme-text-primary, #ffffff);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  transition: color 0.25s ease;
+}
+
+// All Paragraphs & Body Copy (Poppins)
+p {
+  font-family: $font-body;
+  color: var(--theme-text-muted, #94a3b8);
+  font-weight: 400;
+  line-height: 1.6;
+  transition: color 0.25s ease;
+}
+
+// Slim, Sleek Pill Buttons
+.btn-pill-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: var(--theme-blue-primary, #2563eb);
+  color: #ffffff;
+  font-family: $font-sans;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.65rem 1.4rem;
+  border-radius: $radius-pill;
+  border: 1px solid var(--theme-blue-primary, #2563eb);
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: none;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: var(--theme-blue-hover, #3b82f6);
+    border-color: var(--theme-blue-hover, #3b82f6);
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.btn-pill-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background: var(--theme-bg-pill, rgba(255, 255, 255, 0.06));
+  color: var(--theme-text-primary, #ffffff);
+  font-family: $font-sans;
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.65rem 1.4rem;
+  border-radius: $radius-pill;
+  border: 1px solid var(--theme-border, rgba(255, 255, 255, 0.12));
+  cursor: pointer;
+  text-decoration: none;
+  transition: all $transition-fast;
+
+  &:hover {
+    border-color: var(--theme-blue-primary, #2563eb);
+    color: var(--theme-blue-primary, #2563eb);
+    background: var(--theme-blue-tint, rgba(37, 99, 235, 0.1));
+  }
+}
